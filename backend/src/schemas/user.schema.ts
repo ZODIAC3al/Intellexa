@@ -13,7 +13,7 @@ export class User extends Document {
   name: string;
 
   @Prop()
-  avatarUrl?: string;
+  avatar?: string;
 
   @Prop({ default: 'local-core' })
   plan: 'local-core' | 'standard-pro' | 'enterprise';

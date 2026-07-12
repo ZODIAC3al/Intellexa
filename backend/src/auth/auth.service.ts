@@ -55,6 +55,7 @@ export class AuthService {
       name: savedUser.name,
       plan: savedUser.plan,
       workspaceId: savedWorkspace._id,
+      avatar: savedUser.avatar,
     };
   }
 
@@ -81,6 +82,7 @@ export class AuthService {
         plan: user.plan,
         workspaceId: user.workspaceId,
         settings: user.settings,
+        avatar: user.avatar,
       },
     };
   }
