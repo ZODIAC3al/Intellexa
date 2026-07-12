@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-geist-sans), Inter, sans-serif;
+  --font-mono: var(--font-geist-mono), JetBrains Mono, monospace;
+}
+
+@plugin "daisyui" {
+  themes: intellexa-dark --default, intellexa-light --prefersdark false;
+}
+
+@plugin "daisyui/theme" {
+  name: "intellexa-dark";
+  default: true;
+  color-scheme: dark;
+  --color-base-100: #0B0E14;   /* page background */
+  --color-base-200: #12161F;   /* card / panel */
+  --color-base-300: #1B2130;   /* raised card, input, modal */
+  --color-base-content: #EDEFF5;
+  --color-primary: #6E5BFF;        /* violet — primary actions, links, active nav */
+  --color-primary-content: #FFFFFF;
+  --color-secondary: #33D6C0;      /* cyan — Local/Ollama mode indicator, success */
+  --color-secondary-content: #06231F;
+  --color-accent: #F2B84B;         /* amber — Cloud/HF mode indicator, warnings */
+  --color-accent-content: #2B1E00;
+  --color-neutral: #2A3142;        /* hairline borders, dividers */
+  --color-neutral-content: #8E97AC;
+  --color-error: #FF6B7A;
+  --color-error-content: #2B0006;
+  --radius-box: 0.75rem;   /* cards */
+  --radius-field: 0.5rem;  /* inputs, buttons */
+  --radius-selector: 1.25rem; /* composer pill */
+}
+
+@plugin "daisyui/theme" {
+  name: "intellexa-light";
+  color-scheme: light;
+  --color-base-100: #FFFFFF;
+  --color-base-200: #F7F7FB;
+  --color-base-300: #ECEBF7;
+  --color-base-content: #14172A;
+  --color-primary: #5B45F0;
+  --color-primary-content: #FFFFFF;
+  --color-secondary: #10998A;
+  --color-secondary-content: #FFFFFF;
+  --color-accent: #B9800F;
+  --color-accent-content: #FFFFFF;
+  --color-neutral: #D8DAE5;
+  --color-neutral-content: #5B6172;
+  --color-error: #D5323D;
+  --color-error-content: #FFFFFF;
+  --radius-box: 0.75rem;
+  --radius-field: 0.5rem;
+  --radius-selector: 1.25rem;
+}
+
+body {
+  background: var(--color-base-100);
+  color: var(--color-base-content);
+  font-family: var(--font-sans);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Scrollbar customizations */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: var(--color-neutral);
+  border-radius: 9999px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: var(--color-neutral-content);
+}
+
+/* Toastify theme overrides */
+.Toastify__toast {
+  border-radius: var(--radius-box) !important;
+  font-family: var(--font-sans) !important;
+}
+
+.Toastify__toast--success {
+  background: var(--color-secondary) !important;
+  color: var(--color-secondary-content) !important;
+}
+
+.Toastify__toast--error {
+  background: var(--color-error) !important;
+  color: var(--color-error-content) !important;
+}
+
+.Toastify__toast--info {
+  background: var(--color-base-300) !important;
+  color: var(--color-base-content) !important;
+  border: 1px solid var(--color-neutral) !important;
+}
+
+.Toastify__progress-bar {
+  background: var(--color-primary) !important;
+}
