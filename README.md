@@ -155,37 +155,6 @@ The front door to Intellexa, introducing users to dual-mode AI capabilities and 
 Real-time dashboard providing instant visibility into response speeds, document vector distributions, recent activities, and search metrics.
 ![Dashboard Overview](docs/assets/dashboard.png)
 
----
-
-### 3. Cloud AI Assistant
-Streaming conversation view connected to HuggingFace LLMs with system prompt configuration, creativity tuning, prompt templates, image generation, and audio transcription.
-![Cloud Assistant Interface](docs/assets/cloud_assistant.png)
-
----
-
-### 4. Local RAG Assistant & Debug Panel
-100% private LLM chat over custom documents with live source citations, confidence scores, and an expandable RAG Debug Panel for vector inspection.
-![Local RAG Assistant Interface](docs/assets/local_rag_assistant.png)
-
----
-
-### 5. Document Processing Workbench
-Upload, manage, and inspect ingested documents (PDF, DOCX, TXT, MD) with chunk counts, vector indexing statuses, re-indexing controls, and diffing tools.
-![Document Management Workbench](docs/assets/document_management.png)
-
----
-
-### 6. Vector Collection Partitioning Hub
-Organize workspace documents into isolated vector collections with independent similarity databases.
-![Collections Hub](docs/assets/collections_hub.png)
-
----
-
-### 7. System Settings & Usage Telemetry
-Configure API keys, Ollama service endpoints, default retrieval strategies, avatar uploads, and monitor workspace usage meters.
-![Settings & Telemetry](docs/assets/settings.png)
-
----
 
 ## 🚀 Quick Start
 
